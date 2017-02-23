@@ -4,7 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Table(name="Product")
 @Entity
 public class Product {
 
@@ -12,6 +14,7 @@ public class Product {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
+	// attributess
 	int id;
 	String name;
 	double quantity;
